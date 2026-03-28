@@ -1,0 +1,87 @@
+:root {
+    --azul: #6d6dfd;
+    --gradiente-azul: #9191ff, rgb(200, 200, 252);
+    --azul2: #9191ff;
+    --fundo: rgb(255, 255, 255);
+    --letra: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.section-listagem {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    padding: 30px 0;
+}
+.tabela-container {
+   height: 100%;
+   border: 1px solid blue;
+    box-shadow: 1px 1px 10px 1px rgb(194, 194, 194);    
+   border-radius: 10px;
+   width: 100%;
+   max-width: 80rem;
+}
+
+.tabela-container .tabela-h {
+    background-image: linear-gradient(to right, var(--gradiente-azul));
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.tabela-h .logo {
+    width: 15%;
+    display: grid;
+    place-items: center;
+}
+.tabela-h .logo span {
+    display: grid;
+    place-items: center;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    background-image: linear-gradient(to right, var(--gradiente-azul));
+    padding: 15px;
+    backdrop-filter: blur(10px);
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+.tabela-h .conteudo {
+    width: 90%;
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.container-2 {
+    overflow-y: auto;
+    display: grid;
+    padding: 0 40px;
+    height: 300px;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0 5px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+td {
+    color: white;
+}
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+tbody tr {
+    border-collapse: separate;
+    background-image: linear-gradient(to right, var(--gradiente-azul));
+    border-radius: 15px;
+}
+thead th {
+    position: sticky;
+    top: 0;
+    background-color: #eee;
+    z-index: 1;
+    color: rgb(123, 121, 255);
+}

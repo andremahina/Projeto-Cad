@@ -1,0 +1,132 @@
+:root {
+    --azul: #6d6dfd;
+    --gradiente-azul: #9191ff, rgb(200, 200, 252);
+    --azul2: #9191ff;
+    --fundo: rgb(255, 255, 255);
+    --primary: #1a73e8;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --border: #dadce0;
+}
+section {
+    display: grid;
+    place-items: center;
+    padding: 50px 0;
+}
+.container {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, var(--gradiente-azul));
+    border-radius: 60px;
+    padding: 50px 50px;
+}
+.container span {
+    display: grid;
+    place-items: center;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    padding: 30px;
+    font-size: 15rem;
+    border-radius: 10px;
+    transition: 0.5s ease ;
+    margin-right: 10px;
+}
+.container article {
+    display: grid;
+    place-items: center;
+    background-color: #ffffff;
+    min-width: 550px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+    padding: 50px;
+    width: 100%;
+    animation: fadeIn 0.5s ease;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    transition: 0.3s ease all;
+}
+.corte {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+}
+.corte #corte1 {
+    width: 90%;
+}
+.corte #corte2 {
+    width: 18%;
+}
+article h1 {
+    font-weight: 600;
+    color: #6d6dfd;
+    margin-bottom: 30px;
+}
+article form {
+    display: grid;
+    width: 100%;
+    max-width: 450px;
+}
+.form-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+form input {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 6px;
+    font-size: 1rem;
+    padding: 14px 10px 14px 12px;
+    outline: none;
+    background: transparent;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.15);
+}
+label {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: var(--card-bg);
+    color: #5f6368;
+    font-size: 1rem;
+    padding: 0 4px;
+    pointer-events: none;
+    transition: 0.2s ease all;
+}
+input:focus + label {
+    top: -8px;
+    left: 10px;
+    font-size: 0.8rem;
+    color: var(--primary);
+}
+button {
+    width: 100%;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+button:hover {
+    background: #1557b0;
+}
+button:active {
+    transform: scale(0.98);
+}
+.login-link a {
+    color: var(--primary);
+    text-decoration: none;
+}
+.login-link a:hover {
+    text-decoration: none;
+}
+.login-link a:hover {
+    text-decoration: underline;
+}
